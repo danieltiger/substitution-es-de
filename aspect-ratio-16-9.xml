@@ -98,31 +98,8 @@ based on 853x480
       </variables>
    </fontSize>
    <variant name="
-      gamelist-basic
-      ">
-      <view name="gamelist">
-         <textlist name="game-list">
-            <size>${gamelistSize}</size>
-            <horizontalAlignment>center</horizontalAlignment>
-         </textlist>
-      </view>
-      <fontSize name="small">
-         <variables>
-            <gamelistSize>0.95625 0.695833333333333</gamelistSize><!-- 612 334 -->
-         </variables>
-      </fontSize>
-      <fontSize name="medium">
-         <variables>
-            <gamelistSize>0.95625 0.695833333333333</gamelistSize><!-- 612 334 -->
-         </variables>
-      </fontSize>
-   </variant>
-   <variant name="
-      gamelist-metadata-off-boxart,
-      gamelist-metadata-off-miximage,
-      gamelist-metadata-off-screenshot,
-      gamelist-metadata-off-titlescreen,
-      gamelist-metadata-off-physicalmedia
+      system-view-controllers,
+      system-view-colorful
       ">
       <view name="gamelist">
          <textlist name="game-list">

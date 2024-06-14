@@ -123,15 +123,35 @@ license:          creative commons CC-BY-NC-SA
       </text>
       <image name="system-artwork">
          <origin>0.5 0.5</origin>
-         <default>./_inc/systems/controllers/_default.png</default>
-         <path>./_inc/systems/controllers/${system.theme}.png</path>
          <interpolation>linear</interpolation>
          <color>${systemArtworkColor}</color>
          <saturation>${systemArtworkSaturation}</saturation>
          <brightness>${systemArtworkBrigtness}</brightness>
          <zIndex>3</zIndex>
+         <default>./_inc/systems/controllers/_default.png</default>
       </image>
    </view>
+
+   <!--
+   ///
+   System View - Variants
+   ///
+   -->
+   <variant name="system-view-controllers">
+      <view name="system">
+         <image name="system-artwork">
+            <path>./_inc/systems/controllers/${system.theme}.png</path>
+         </image>
+      </view>
+   </variant>
+   <variant name="system-view-colorful">
+      <view name="system">
+         <image name="system-artwork">
+            <path>./_inc/systems/colorful/${system.theme}.webp</path>
+         </image>
+      </view>
+   </variant>
+
 
    <!--
    ///
@@ -177,14 +197,12 @@ license:          creative commons CC-BY-NC-SA
       </image>
    </view>
    <variant name="
-      gamelist-metadata-off-boxart,
-      gamelist-metadata-off-miximage,
-      gamelist-metadata-off-screenshot,
-      gamelist-metadata-off-titlescreen,
-      gamelist-metadata-off-physicalmedia
+      system-view-controllers,
+      system-view-colorful
       ">
       <view name="gamelist">
          <video name="game-art">
+            <imageType>cover</imageType>
             <origin>0.5 0.5</origin>
             <imageCornerRadius>0.02</imageCornerRadius>
             <videoCornerRadius>0.02</videoCornerRadius>
@@ -192,41 +210,6 @@ license:          creative commons CC-BY-NC-SA
             <delay>900</delay>
             <iterationCount>1</iterationCount>
             <onIterationsDone>image</onIterationsDone>
-         </video>
-      </view>
-   </variant>
-   <variant name="gamelist-metadata-off-boxart">
-      <view name="gamelist">
-         <video name="game-art">
-            <imageType>cover</imageType>
-         </video>
-      </view>
-   </variant>
-   <variant name="gamelist-metadata-off-miximage">
-      <view name="gamelist">
-         <video name="game-art">
-            <imageType>miximage</imageType>
-         </video>
-      </view>
-   </variant>
-   <variant name="gamelist-metadata-off-screenshot">
-      <view name="gamelist">
-         <video name="game-art">
-            <imageType>screenshot</imageType>
-         </video>
-      </view>
-   </variant>
-   <variant name="gamelist-metadata-off-titlescreen">
-      <view name="gamelist">
-         <video name="game-art">
-            <imageType>titlescreen</imageType>
-         </video>
-      </view>
-   </variant>
-   <variant name="gamelist-metadata-off-physicalmedia">
-      <view name="gamelist">
-         <video name="game-art">
-            <imageType>physicalmedia</imageType>
          </video>
       </view>
    </variant>
