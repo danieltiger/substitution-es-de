@@ -204,8 +204,6 @@ license:          creative commons CC-BY-NC-SA
          <video name="game-art">
             <imageType>cover</imageType>
             <origin>0.5 0.5</origin>
-            <imageCornerRadius>0.02</imageCornerRadius>
-            <videoCornerRadius>0.02</videoCornerRadius>
             <pillarboxes>false</pillarboxes>
             <delay>900</delay>
             <iterationCount>1</iterationCount>
